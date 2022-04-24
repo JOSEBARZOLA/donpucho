@@ -1,3 +1,5 @@
+
+
 body .container {
     /*hacer responsive*/
     width: 100%;
@@ -74,8 +76,6 @@ body .container {
 
 
 
-
-
 /*media query mobile first*/
 
 @media screen and (max-width: 425px){
@@ -139,15 +139,14 @@ body .container {
     .logos {
         display: flex;
        justify-content: center;
-       font-size: 30px;
-    
+        font-size: 20px;
     }
 
     
     .container .navbar ul a {
-        font-size: 15px;
-        display:felx;
-        justify-content: center;
+        font-size: 12px;
+        display:flex;
+       justify-content: center;
         
         
 
@@ -160,10 +159,92 @@ body .container {
         flex-wrap: wrap;
         justify-content: center;
  
+    }
+@media screen and (max-width: 768px) and (min-width: 500px){
+    .container .navbar ul a {
+    font-size: 17px;
+
+
+    }
+
+
+
+
     
 }
+/*MEDIA QUERY*/
+@media (max-width: 768px){
+    
+    .footer-container{
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .footer-content-container{
+        width: 100%;
+        padding: 2rem 0;
+        border-bottom: 1px solid #2A2A2A;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content-container:nth-of-type(1){
+        align-items: flex-start;
+    }
+    .footer-content-container:nth-of-type(3){
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .footer-menus{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 1px solid #2A2A2A;
+    }
+
+    .footer-menus .footer-content-container:nth-of-type(1){
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+    .footer-menus .footer-content-container:nth-of-type(2){
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+}
+
+
+
+
+
+
 }
 @media screen and (max-width: 1024px) and (min-width: 770px){
+
+    .logos {
+        display: flex;
+       justify-content: center;
+        font-size: 30px;
+    }
+
+    
+    .container .navbar ul a {
+        font-size: 20px;
+        display:flex;
+        justify-content:space-around;
+        margin: 0;
+    
+    
+    
+    
+    
+    }
+
+
+
 
 
 div .contenedor-card {
@@ -178,5 +259,36 @@ div .contenedor-card {
     }
 
 
+
+}
+
+
+
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){
+
+    .logos {
+        display: flex;
+       justify-content: center;
+        font-size: 35px;
+    }
+
+    
+    .container .navbar ul a {
+        font-size: 25px;
+        display:flex;
+        justify-content: center;
+    
+    
+    
+    
+    
+    }
+
+
+
+    
+    
+    
 
 }
