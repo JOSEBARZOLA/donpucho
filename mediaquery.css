@@ -76,13 +76,28 @@ body .container {
 
 
 
-/*media query mobile first
+/*media query mobile first*/
 
-@media screen and (min-width: 320px){
+@media screen and (max-width: 425px){
 
-    .container {
-        width: 100%;
-
+    
+    .container .navbar {
+       display: flex;
+        justify-content: space-between;
+    }
+    .container .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position:absolute;
+        justify-content: flex-end;
+        margin: 50%;
+        font-size: small;
+    }
+    .container .navbar ul a {
+        font-size: 15px;
+        display: flex;
+        align-items: flex-end;
 
     }
 
@@ -90,18 +105,78 @@ body .container {
     .logos {
         display: flex;
         align-items: flex-start;
-        flex-direction: column;
+        
+        
     }
-   .opciones {
-      display: flex;
-      flex-direction: row;
-   } 
+
+    .logos .text-white {
+        display: flex;
+        font-size: 300px;
+        
+    }
    
 
+   div .contenedor-card {
+       
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+
+   }
+
+
+
+
+} 
+@media screen and (max-width: 769px) and (min-width: 426px){
+
+    .container .navbar {
+        display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+    .logos {
+        display: flex;
+       justify-content: center;
+       font-size: 30px;
+    
+    }
+
+    
+    .container .navbar ul a {
+        font-size: 15px;
+        display:felx;
+        justify-content: center;
+        
+        
+
+    }
+
+    div .contenedor-card {
+       
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+ 
+    
+}
+}
+@media screen and (max-width: 1024px) and (min-width: 770px){
+
+
+div .contenedor-card {
+       
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    
+    
+    }
 
 
 
 }
-
-
-*/

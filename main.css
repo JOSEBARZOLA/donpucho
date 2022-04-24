@@ -84,10 +84,7 @@ body .card {
     
     
 }
-body .contenedor-card img {
-    display: flex;
-    max-height: 400px;
-}
+
 
 
 /*------contenedor card ----------*/
