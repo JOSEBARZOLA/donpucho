@@ -145,6 +145,7 @@ border-radius: .2em;
 cursor: pointer;
 font-weight: 400;
 }
+/*mediaquery form*/
 @media (max-width:450px){
     .form{
         padding: 3.5em 1.5em;
