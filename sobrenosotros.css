@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+
+.social-bar {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+
+.icon-facebook2 {
+    background: #2E406E;
+}
+
+.icon-whatsapp {
+    background: #20c211;
+}
+
+.icon-instagram {
+    background: #f703f7;
+}
+
+.icon:first-child {
+    border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+    border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+/*----------------------navbar-------------------*/
+
+header {
+    background-color: rgba(90, 40, 90, 0.80);
+}
+
+
+li {
+    list-style: none;
+
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+
+    transition: 0.7s ease;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+
+}
+
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+        
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(90, 40, 90, 0.80);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+
+    .nav-item {
+        margin: 16px 0;
+
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+}
+
+
+/*---------------------------------style sobre nosotros----------------------------------------------------*/
+body .container__box {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 6px;
+    padding: 5vh;
+
+}
+
+
+.container__box .box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110vh;
+    height: 100vh;
+    color: #fff;
+    justify-content: space-around;
+
+
+
+}
+
+.container__box .box1 .tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 30px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.container__box .box1 .text {
+    display: flex;
+    align-items:center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 100;
+    color: #fff;
+
+
+}
+
+
+.container__box .box2 {
+    display: flex;
+    width: 110vh;
+    height: 100vh;
+
+
+}

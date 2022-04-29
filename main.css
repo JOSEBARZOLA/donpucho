@@ -1,10 +1,10 @@
 * {
-	margin: 0;
-	pad: 0;
-	box-sizing: border-box;
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-	
+
 }
 
 /*-----------------------social-bar------------------*/
@@ -13,64 +13,66 @@
 
 
 .social-bar {
-	position: fixed;
-	right: 0;
-	top: 35%;
-	font-size: 1.5rem;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	z-index: 100;
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
 }
 
 .icon {
-	color: white;
-	text-decoration: none;
-	padding: .7rem;
-	display: flex;
-	transition: all .5s;
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
 }
 
 .icon-facebook2 {
-	background: #2E406E;
+    background: #2E406E;
 }
+
 .icon-whatsapp {
-	background: #20c211;
+    background: #20c211;
 }
 
 .icon-instagram {
-	background: #f703f7;
+    background: #f703f7;
 }
 
 .icon:first-child {
-	border-radius: 1rem 0 0 0;
+    border-radius: 1rem 0 0 0;
 }
 
 .icon:last-child {
-	border-radius: 0 0 0 1rem;
+    border-radius: 0 0 0 1rem;
 }
 
 .icon:hover {
-	padding-right: 3rem;
-	border-radius: 1rem 0 0 1rem;
-	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
 }
+
 /*-----------------------social-bar------------------*/
 /*-----------------------social-bar------------------*/
 /*-----------------------social-bar------------------*/
 
 body {
-	background-image: linear-gradient(rgba(5 , 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(./imagenes/picada4.jpg);
-	background-size: cover;
-	background-position:100%;
-	background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(./imagenes/picada4.jpg);
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
     min-height: 100vh;
 }
 
 
 /*------ contenedor card-------*/
 body .contenedor-card {
- display: flex;
+    display: flex;
 
 
 }
@@ -79,10 +81,19 @@ body .card {
     display: flex;
     margin: 5%;
     align-content: space-around;
-    
-    
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
 }
 
+.card:hover {
+
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.6);
+    transform: translateY(-3%);
+}
 
 
 /*------contenedor card ----------*/
@@ -97,7 +108,7 @@ body .form {
     border-radius: 1em;
     padding: 3.5em 1.5em;
 
- 
+
 
 }
 
@@ -120,37 +131,40 @@ body .form__title {
 body .form__imput {
 
     font-family: inherit;
-font-size: 1rem;
-padding: .8em 1em;   
- outline: none;
- border: none;
- border: 1px solid #bbb0b0;
- border-radius: 0.2em;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
 
 }
+
 .form__input--message {
     resize: none;
     padding: 1.8rem 1em;
     margin-bottom: .5em;
 
 }
-body .form__cta { 
-font-family: inherit;
-background-color: #089fe0;
-color: #fff;
-border: none;
-font-weight: 300;
-padding: .7em 0;
-border-radius: .2em;
-cursor: pointer;
-font-weight: 400;
+
+body .form__cta {
+    font-family: inherit;
+    background-color: #089fe0;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
 }
+
 /*mediaquery form*/
-@media (max-width:450px){
-    .form{
+@media (max-width:450px) {
+    .form {
         padding: 3.5em 1.5em;
     }
-    
+
 }
 
 
@@ -164,9 +178,9 @@ font-weight: 400;
 /*-----------------formulario---------------------*/
 /*-----------------footer---------------------*/
 
-footer{
-   position:flex;
-   max-height: 30rem;
+footer {
+    position: flex;
+    max-height: 30rem;
     bottom: 0;
     left: 0;
     height: fit-content;
@@ -180,16 +194,16 @@ footer{
     background-color: #121212;
 }
 
-.copyright-container{
+.copyright-container {
     width: 100%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: 1px solid rgb(255, 255, 255);
 }
 
-.copyright{
+.copyright {
     font-size: 12px;
     opacity: 0.7;
     font-weight: 400;
@@ -197,7 +211,7 @@ footer{
 }
 
 
-.footer-container{
+.footer-container {
     height: fit-content;
     width: 100%;
     padding: 3rem 6rem;
@@ -207,7 +221,7 @@ footer{
     align-items: flex-start;
 }
 
-.footer-content-container{
+.footer-content-container {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -216,6 +230,5 @@ footer{
 
 footer .subtitle {
     display: flex;
-    
-}
 
+}
