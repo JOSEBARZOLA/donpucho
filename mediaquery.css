@@ -103,7 +103,6 @@ body header .container .navbar ul li:hover::before {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-
     .nav-menu {
         position: absolute;
         left: -100%;

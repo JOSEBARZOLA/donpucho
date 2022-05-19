@@ -12,4 +12,5 @@ document.querySelectorAll(".nav-link".foreach(n => n.addEventListener("click", (
 
 }
 
+
 )))
