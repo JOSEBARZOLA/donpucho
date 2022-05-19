@@ -14,13 +14,14 @@
 
 .social-bar {
     position: fixed;
+    
     right: 0;
     top: 35%;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    z-index: 100;
+    z-index: 1;
     
 }
 
@@ -70,6 +71,82 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
 }
+
+/*----------------------navbar-------------------*/
+
+header {
+    background-color: rgba(90, 40, 90, 0.80);
+}
+
+
+li {
+    list-style: none;
+
+}
+
+
+a {
+
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-branding .text-white {
+    cursor: default;
+    text-decoration: none;
+    color: #fff;
+
+
+}
+
+.nav-link {
+
+    color: #fff;
+    transition: 0.7s ease;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+
+}
+
 
 
 /*------ contenedor card-------*/

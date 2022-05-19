@@ -1,5 +1,5 @@
 
-
+/*
 body header .container {
   
     width: 100%;
@@ -77,14 +77,76 @@ body header .container .navbar ul li:hover::before {
     width: 100%;
 }
 
+*/
+/*----------------------navbar-------------------*/
 
 
+/*mediaquerry*/
 
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(90, 40, 90, 0.80);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+
+    .nav-menu .nav-item {
+        margin: 16px 0;
+        font-size: 15px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+
+    }
+
+    .nav-branding {
+        font-size: 20px;
+    }
+
+    .nav-branding .text-white {
+        cursor: default;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+
+
+    }
+
+
+}
 /*media query mobile first*/
 
 @media screen and (max-width: 425px){
 
-    
+    /*
     .container .navbar {
        display: flex;
         justify-content: space-between;
@@ -112,7 +174,7 @@ body header .container .navbar ul li:hover::before {
         font-size: 300px;
         
     }
-   
+   */
 
    div .contenedor-card {
        
@@ -128,7 +190,7 @@ body header .container .navbar ul li:hover::before {
 
 } 
 @media screen and (max-width: 769px) and (min-width: 426px){
-
+/*
     .container .navbar {
         display: flex;
          align-items: center;
@@ -149,7 +211,7 @@ body header .container .navbar ul li:hover::before {
         
 
     }
-
+*/
     div .contenedor-card {
        
         display: flex;
@@ -159,8 +221,9 @@ body header .container .navbar ul li:hover::before {
  
     }
 
-    /*mediaquery font menu*/
+    /*mediaquery font menu
 @media screen and (max-width: 768px) and (min-width: 500px){
+    
     .container .navbar ul a {
     font-size: 17px;
 
@@ -172,6 +235,9 @@ body header .container .navbar ul li:hover::before {
 
     
 }
+
+*/
+
 /*MEDIA QUERY footer*/
 @media (max-width: 768px){
     
