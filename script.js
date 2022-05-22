@@ -1,3 +1,11 @@
+window.onload = function(){
+    alert("La pagina se ha cargado")
+$('#onload').fadeOut();
+$('body').removeClass('hidden');
+}
+
+
+
 const hamburger = document.querySelector(".hamburger")
 const navmenu = document.querySelector(".nav-menu")
 
@@ -6,21 +14,22 @@ hamburger.addEventListener("click", () => {
     navmenu.classList.toggle("active")
 })
 
-document.querySelectorAll(".nav-link".foreach(n => n.addEventListener("click", () =>{
-    hamburger.classList.remove("active")
-    navmenu.classList.remove("active")
+document.querySelectorAll(".nav-link".foreach(n => n.addEventListener("click", () => {
+        hamburger.classList.remove("active")
+        navmenu.classList.remove("active")
 
-}
+    }
 
 
 )))
+
 
 function Click() {
     var nombre = document.getElementById("nombre").value;
     var email = document.getElementById("email").value;
     if (nombre == "" || email == "") {
-        alert("Debes compeltar ambos campos"); 
+        alert("Debes compeltar ambos campos");
     } else {
-    alert("Enviado");
+        alert("Enviado");
     }
-  }
+}

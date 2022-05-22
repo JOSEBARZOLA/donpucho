@@ -134,51 +134,90 @@ a {
 
 
 /*---------------------------------style sobre nosotros----------------------------------------------------*/
-.contenedor_parrafo{
+.hidden{
+overflow: hidden;
+}
+
+.centrado{
+    height: 100vh;
 display: flex;
-
-width: 50%;
-border: #fff solid;
-border-radius: 20px;
-color: aliceblue;
-flex-direction: row;
-background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80));
 justify-content: center;
-margin: 50px auto;
-height: 100%;
-transform: skewY(-4deg);
-transform-origin: top, right;
+align-items: center;
+}
 
-box-shadow: 0px 1px 10px rgba(86, 3, 88, 0.2);
-cursor: default;
-transition:all 500ms ease;
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid rgba(90, 40, 90, 0.80);
+    border-color: rgba(90, 40, 90, 0.80) transparent rgba(90, 40, 90, 0.80);
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+.contenedor_parrafo {
+    display: flex;
+
+    width: 50%;
+    border: #fff solid;
+    border-radius: 20px;
+    color: aliceblue;
+    flex-direction: row;
+    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80));
+    justify-content: center;
+    margin: 50px auto;
+    height: 100%;
+    transform: skewY(-4deg);
+    transform-origin: top, right;
+
+    box-shadow: 0px 1px 10px rgba(86, 3, 88, 0.2);
+    cursor: default;
+    transition: all 500ms ease;
 }
 
 .contenedor_parrafo:hover {
 
     box-shadow: 0px 1px 10px rgba(86, 3, 88, 0.2);
-transform: translateY(-3%);
+    transform: translateY(-3%);
 }
 
 
- 
+
 .contenido {
     display: flex;
     flex-direction: column;
     margin: 20px auto;
     padding: 40px;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     transform: skewY(4deg);
-    
+
 }
+
 .contenido .titulo {
     margin: 20px auto;
 
 }
+
 .contenido:hover {
 
     transform: translateY(3%);
-    }
+}
 
 /*-----------------foother--------------------*/
 footer {
