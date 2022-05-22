@@ -14,3 +14,13 @@ document.querySelectorAll(".nav-link".foreach(n => n.addEventListener("click", (
 
 
 )))
+
+function Click() {
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    if (nombre == "" || email == "") {
+        alert("Debes compeltar ambos campos"); 
+    } else {
+    alert("Enviado");
+    }
+  }

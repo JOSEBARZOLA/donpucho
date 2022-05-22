@@ -156,11 +156,21 @@
         <form class="form">
           <div class="form__container">
             <h2 class="form__title">Contáctame</h2>
-            <input type="text" class="form__input" placeholder="Nombre" required>
-            <input type="email" class="form__input" placeholder="Email" required>
+            <input type="text" id="nombre" class="form__input" placeholder="Nombre" required>
+            <input type="email" id="email" class="form__input" placeholder="Email" required>
             <textarea class="form__input form__input--message" placeholder="Mensaje"></textarea>
-            <input type="submit" value="Enviar" class="form__cta">
-
+            <input type="submit" value="Enviar" class="form__cta" href="#" onclick="Click()">
+            <script>
+              function Click() {
+                var nombre = document.getElementById("nombre").value;
+                var correo = document.getElementById("email").value;
+                if (nombre == "" || email == "") {
+                    alert("Debes compeltar ambos campos"); 
+                } else {
+                alert("Enviado");
+                }
+              }
+              </script>
           </div>
         </form>
 
