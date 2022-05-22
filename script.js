@@ -1,9 +1,9 @@
 window.onload = function(){
-    alert("La pagina se ha cargado")
+   
 $('#onload').fadeOut();
 $('body').removeClass('hidden');
+alert("La pagina se ha cargado")
 }
-
 
 
 const hamburger = document.querySelector(".hamburger")
