@@ -1,4 +1,3 @@
-
 /*
 body header .container {
   
@@ -141,9 +140,10 @@ body header .container .navbar ul li:hover::before {
 
 
 }
+
 /*media query mobile first*/
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
 
     /*
     .container .navbar {
@@ -175,21 +175,23 @@ body header .container .navbar ul li:hover::before {
     }
    */
 
-   div .contenedor-card {
-       
-       display: flex;
-       flex-direction: row;
-       flex-wrap: wrap;
-       justify-content: center;
+    div .contenedor-card {
 
-   }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
 
-
+    }
 
 
-} 
-@media screen and (max-width: 769px) and (min-width: 426px){
-/*
+
+
+}
+
+@media screen and (max-width: 769px) and (min-width: 426px) {
+
+    /*
     .container .navbar {
         display: flex;
          align-items: center;
@@ -212,12 +214,12 @@ body header .container .navbar ul li:hover::before {
     }
 */
     div .contenedor-card {
-       
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
- 
+
     }
 
     /*mediaquery font menu
@@ -237,64 +239,68 @@ body header .container .navbar ul li:hover::before {
 
 */
 
-/*MEDIA QUERY footer*/
-@media (max-width: 768px){
-    
-    .footer-container{
-        padding: 2rem;
-        flex-direction: column;
+    /*MEDIA QUERY footer*/
+    @media (max-width: 768px) {
+
+        .footer-container {
+            padding: 2rem;
+            flex-direction: column;
+        }
+
+        .footer-content-container {
+            width: 100%;
+            padding: 2rem 0;
+            border-bottom: 1px solid #2A2A2A;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-content-container:nth-of-type(1) {
+            align-items: flex-start;
+        }
+
+        .footer-content-container:nth-of-type(3) {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .footer-menus {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1px solid #2A2A2A;
+        }
+
+        .footer-menus .footer-content-container:nth-of-type(1) {
+            width: 45%;
+            align-items: flex-start;
+            border-bottom: none;
+        }
+
+        .footer-menus .footer-content-container:nth-of-type(2) {
+            width: 45%;
+            align-items: flex-start;
+            border-bottom: none;
+        }
     }
 
-    .footer-content-container{
-        width: 100%;
-        padding: 2rem 0;
-        border-bottom: 1px solid #2A2A2A;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .footer-content-container:nth-of-type(1){
-        align-items: flex-start;
-    }
-    .footer-content-container:nth-of-type(3){
-        border-bottom: none;
-        padding-bottom: 0;
-    }
 
-    .footer-menus{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        border-bottom: 1px solid #2A2A2A;
-    }
 
-    .footer-menus .footer-content-container:nth-of-type(1){
-        width: 45%;
-        align-items: flex-start;
-        border-bottom: none;
-    }
-    .footer-menus .footer-content-container:nth-of-type(2){
-        width: 45%;
-        align-items: flex-start;
-        border-bottom: none;
-    }
+    /*MEDIA QUERY screen*/
+
 }
 
-
-
-
-/*MEDIA QUERY screen*/
-
-}
-@media screen and (max-width: 1024px) and (min-width: 770px){
+@media screen and (max-width: 1024px) and (min-width: 770px) {
 
     .logos {
         display: flex;
-       justify-content: center;
+        justify-content: center;
         font-size: 30px;
     }
-    .container .navbar  ul li {
+
+    .container .navbar ul li {
         display: flex;
         flex-direction: row;
         list-style: none;
@@ -302,32 +308,32 @@ body header .container .navbar ul li:hover::before {
         margin: 0 20px;
         position: relative;
     }
-    
+
     .container .navbar ul a {
         font-size: 20px;
-        display:flex;
-        justify-content:space-around;
+        display: flex;
+        justify-content: space-around;
         margin: 0;
-    
-    
-    
-    
-    
+
+
+
+
+
     }
 
 
 
 
 
-div .contenedor-card {
-       
+    div .contenedor-card {
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-    
-    
-    
+
+
+
     }
 
 
@@ -337,30 +343,30 @@ div .contenedor-card {
 
 
 
-@media screen and (max-width: 1440px) and (min-width: 1025px){
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
 
     .logos {
         display: flex;
-       justify-content: center;
+        justify-content: center;
         font-size: 35px;
     }
 
-    
+
     .container .navbar ul a {
         font-size: 25px;
-        display:flex;
+        display: flex;
         justify-content: center;
-    
-    
-    
-    
-    
+
+
+
+
+
     }
 
 
 
-    
-    
-    
+
+
+
 
 }
