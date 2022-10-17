@@ -314,3 +314,16 @@ footer .subtitle {
     display: flex;
 
 }
+
+.footer-container .footer-content-container .targetMap {
+    text-decoration: none;
+    color: #ffff;
+}
+a {
+    background: linear-gradient(rgba(51, 2, 2, 0.644), rgb(0, 0, 0));
+    transition: background-color .5s;
+  }
+  
+  a:hover {
+    background-color: rgb(255, 0, 0);
+  }
