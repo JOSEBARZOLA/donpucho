@@ -108,7 +108,7 @@ body header .container .navbar ul li:hover::before {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: rgba(90, 40, 90, 0.80);
+        background-color: rgba(116, 15, 15, 0.842);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -122,7 +122,6 @@ body header .container .navbar ul li:hover::before {
 
     .nav-menu.active {
         left: 0;
-
     }
 
     .nav-branding {
@@ -140,6 +139,7 @@ body header .container .navbar ul li:hover::before {
 
 
 }
+
 
 /*media query mobile first*/
 
@@ -189,7 +189,7 @@ body header .container .navbar ul li:hover::before {
 
 }
 
-@media screen and (max-width: 769px) and (min-width: 426px) {
+@media screen and (max-width: 768px) and (min-width: 426px) {
 
     /*
     .container .navbar {

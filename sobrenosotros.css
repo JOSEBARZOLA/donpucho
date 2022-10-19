@@ -88,6 +88,7 @@ a {
 
 .nav-menu {
     display: flex;
+    z-index: 1;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
@@ -109,12 +110,12 @@ a {
 .nav-link {
 
     color: #fff;
-    transition: 0.7s ease;
+    transition: 0.7s;
     font-size: 1.2rem;
 }
 
 .nav-link:hover {
-    color: dodgerblue;
+    color: #000000;
 }
 
 .hamburger {
@@ -161,7 +162,7 @@ align-items: center;
     margin: 8px;
     border-radius: 50%;
     border: 6px solid rgba(90, 40, 90, 0.80);
-    border-color: rgba(90, 40, 90, 0.80) transparent rgba(90, 40, 90, 0.80);
+    border-color: rgb(255, 0, 0) transparent rgb(255, 0, 0);
     animation: lds-dual-ring 1.2s linear infinite;
   }
   @keyframes lds-dual-ring {
@@ -221,10 +222,16 @@ align-items: center;
 
     transform: translateY(3%);
 }
+a {
+
+    text-decoration: none;
+    color: #fff;
+}
 
 /*-----------------foother--------------------*/
 footer {
     position: flex;
+    
     max-height: 30rem;
     bottom: 0;
     left: 0;
@@ -279,66 +286,15 @@ footer .subtitle {
     display: flex;
 
 }
-
-
-/*mediaquerry*/
-
-@media screen and (max-width: 768px) {
-    .hamburger {
-        display: block;
-
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: rgba(90, 40, 90, 0.80);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-
-    }
-
-    .nav-menu .nav-item {
-        margin: 16px 0;
-        font-size: 15px;
-    }
-
-    .nav-menu.active {
-        left: 0;
-
-    }
-
-    .nav-branding {
-        font-size: 20px;
-    }
-
-    .nav-branding .text-white {
-        cursor: default;
-        text-decoration: none;
-        color: #fff;
-        font-size: 20px;
-
-
-    }
-
-
+.footer-container .footer-content-container  {
+    text-decoration: none;
+    color: #ffff;
+    transition: background-color .5s;
 }
+
+  .targetMap:hover {
+   background-color: rgb(255, 0, 0);
+  color: #fff;
+  }
+
+
