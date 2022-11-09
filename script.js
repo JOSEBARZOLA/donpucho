@@ -1,8 +1,8 @@
-window.onload = function(){
-   
-$('#onload').fadeOut();
-$('body').removeClass('hidden');
-alert("La pagina se ha cargado")
+window.onload = function () {
+
+    $('#onload').fadeOut();
+    $('body').removeClass('hidden');
+    alert("La pagina se ha cargado")
 }
 
 
@@ -28,7 +28,7 @@ function Click() {
     var nombre = document.getElementById("nombre").value;
     var email = document.getElementById("email").value;
     var email = document.getElementById("mensaje").value;
-    if (nombre == "" || email == "" || mensaje == "" ) {
+    if (nombre == "" || email == "" || mensaje == "") {
         alert("Debes compeltar ambos campos");
     } else {
         alert("Enviado");
