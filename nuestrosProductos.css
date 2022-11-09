@@ -104,7 +104,7 @@ padding: 0 4px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    color: rgba(240, 106, 45);
+    color: rgb(172, 12, 12);
 }
 
 .botones:hover > i{
