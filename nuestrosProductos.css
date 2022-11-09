@@ -6,3 +6,59 @@
     list-style: none;
 
 }
+
+.titulo {
+    text-align: center;
+    padding: 20px 0;
+    color: aliceblue;
+}
+
+.galeria{
+display: flex;
+flex-wrap: wrap;
+padding: 10px 20px;
+
+}
+.columna {
+flex: 20%;
+max-width: 20%;
+padding: 0 4px;
+}
+
+.columna img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100px;
+    filter: grayscale(100%);
+    transition: all .3s ease;
+}
+.columna img:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+}
+
+.overlay .slideshow {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, .9);
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}

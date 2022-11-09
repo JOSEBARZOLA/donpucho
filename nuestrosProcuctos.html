@@ -1,90 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./nuestrosProductos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css
+    ">
     <title>Nuestros productos</title>
-     <!--link icono redes-->
-  <link rel="stylesheet" href="./iconos/font.css">
-  <!--link icono whatsapp-->
-  <link rel="stylesheet" href="./iconos/wp/style.css">
-  <!---->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!--link font roboto -google-->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
-  <!--link bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!--link mis estilos-->
-  <link rel="stylesheet" href="main.css">
-  <!--link mediaquery-->
-  <link rel="stylesheet" href="./mediaquery.css">
-
+    <!--link icono redes-->
+    <link rel="stylesheet" href="./iconos/font.css">
+    <!--link icono whatsapp-->
+    <link rel="stylesheet" href="./iconos/wp/style.css">
+    <!---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--link font roboto -google-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <!--link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--link mis estilos-->
+    <link rel="stylesheet" href="main.css">
+    <!--link mediaquery-->
+    <link rel="stylesheet" href="./mediaquery.css">
+    <!--link mustros productos-->
+    <link rel="stylesheet" href="nuestrosProductos.css">
 </head>
-<body>
-    
-        <div class="social-bar">
-          <a href="https://www.facebook.com/profile.php?id=100071106325126" class="icon icon-facebook2" target="_blank"></a>
-          <a href="#" class="icon icon-whatsapp" target="_blank"></a>
-          <a href="https://www.instagram.com/chacinadosdonpucho" class="icon icon-instagram" target="_blank"></a>
-        </div>
 
-        <!-----------contenedor navbar------------->
+<body>
+
+    <div class="social-bar">
+        <a href="https://www.facebook.com/profile.php?id=100071106325126" class="icon icon-facebook2"
+            target="_blank"></a>
+        <a href="#" class="icon icon-whatsapp" target="_blank"></a>
+        <a href="https://www.instagram.com/chacinadosdonpucho" class="icon icon-instagram" target="_blank"></a>
+    </div>
+
+    <!-----------contenedor navbar------------->
     <header>
         <nav class="navbar">
-          <a class="nav-branding">
-            <h3 class="text-white fw-light" style="font-style: italic; font-size: largue;">Chacinados <br>don pucho
-            </h3>
-          </a>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a target="_blank" href="./sobrenosotros.html" class="nav-link" style="font-style: italic; font-size: largue;">Sobre
-                nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a target="_blank" href="#" class="nav-link" style="font-style: italic; font-size: largue;">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link" style="font-style: italic; font-size: largue;">Home</a>
-            </li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-  
+            <a class="nav-branding">
+                <h3 class="text-white fw-light" style="font-style: italic; font-size: largue;">Chacinados <br>don pucho
+                </h3>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a target="_blank" href="./sobrenosotros.html" class="nav-link"
+                        style="font-style: italic; font-size: largue;">Sobre
+                        nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" href="#" class="nav-link"
+                        style="font-style: italic; font-size: largue;">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link" style="font-style: italic; font-size: largue;">Home</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
         </nav>
-      </header>
-      
-      <div>
+    </header>
+    <div class="overlay">
+        <div class="slideshow">
+            <span class="btn_cerrar">&times;</span>
+            <div class="botones atras">
+                <i class="mdi mdi-arrow-right-circle-outline"></i>
+            </div>
+            <div class="botones adelante">
+                <i class="mdi mdi-arrow-left-circle-outline"></i>
+            </div>
+            <img src="" alt="" id="img_slideshow">
+        </div>
+    </div>
+
+    <div>
+        <h1 class="titulo"><strong>Nuestros productos</strong></h1>
+    </div>
+    <section class="galeria">
+
+        <div class="columna">
+            <img src="./imagenes/Productos/1.jpg" alt="" data-img-mostrar="0">
+            <img src="./imagenes/Productos/2.jpg" alt="" data-img-mostrar="1">
+            <img src="./imagenes/Productos/3.jpg" alt="" data-img-mostrar="2">
+            <img src="./imagenes/Productos/4.jpg" alt="" data-img-mostrar="3">
+            <img src="./imagenes/Productos/5.jpg" alt="" data-img-mostrar="4">
+        </div>
+        <div class="columna">
+            <img src="./imagenes/Productos/6.jpg" alt="" data-img-mostrar="5">
+            <img src="./imagenes/Productos/7.jpg" alt="" data-img-mostrar="6">
+            <img src="./imagenes/Productos/8.jpg" alt="" data-img-mostrar="7">
+            <img src="./imagenes/Productos/9.jpg" alt="" data-img-mostrar="8">
+            <img src="./imagenes/Productos/10.jpg" alt="" data-img-mostrar="9">
+
+        </div>
+        <div class="columna">
+            <img src="./imagenes/Productos/11.jpg" alt="" data-img-mostrar="10">
+            <img src="./imagenes/Productos/12.jpg" alt="" data-img-mostrar="11">
+            <img src="./imagenes/Productos/13.jpg" alt="" data-img-mostrar="12">
+            <img src="./imagenes/Productos/14.jpg" alt="" data-img-mostrar="13">
+            <img src="./imagenes/Productos/15.jpg" alt="" data-img-mostrar="14">
+            
+        </div>
+        <div class="columna">
+            <img src="./imagenes/Productos/16.jpg" alt="" data-img-mostrar="15">
+            <img src="./imagenes/Productos/17.jpg" alt="" data-img-mostrar="16">
+            <img src="./imagenes/Productos/18.jpg" alt="" data-img-mostrar="17">
+            <img src="./imagenes/Productos/19.jpg" alt="" data-img-mostrar="18">
+            <img src="./imagenes/Productos/20.jpg" alt="" data-img-mostrar="19">
+
+        </div>
+        <div class="columna">
+            <img src="./imagenes/Productos/21.png" alt="" data-img-mostrar="20">
+            <img src="./imagenes/Productos/22.jpg" alt="" data-img-mostrar="21">
+            <img src="./imagenes/Productos/23.jpg" alt="" data-img-mostrar="22">
+            <img src="./imagenes/Productos/24.jpg" alt="" data-img-mostrar="23">
+            <img src="./imagenes/Productos/25.jpg" alt="" data-img-mostrar="24">
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <div>
 
         <footer>
-          <div class="footer-container">
-  
-            <div class="footer-content-container">
-              
-              <h5 class="subtitle" style="font-style: italic; font-size:large;">Horario de atención: 08:00 hs - 18:00hs.</h5>
-              <a class="targetMap" target="_blank" href="https://goo.gl/maps/9fdxtmhhiWho2owT6"> <strong>Como llegar (Hazme click)</strong></a>
-              <span class="footer-info" >Cafferata, Sta fé, Argentina.</span>
+            <div class="footer-container">
+
+                <div class="footer-content-container">
+
+                    <h5 class="subtitle" style="font-style: italic; font-size:large;">Horario de atención: 08:00 hs -
+                        18:00hs.</h5>
+                    <a class="targetMap" target="_blank" href="https://goo.gl/maps/9fdxtmhhiWho2owT6"> <strong>Como
+                            llegar (Hazme click)</strong></a>
+                    <span class="footer-info">Cafferata, Sta fé, Argentina.</span>
+                </div>
+
+
             </div>
-  
-  
-          </div>
-          <div class="copyright-container">
-            <span class="copyright">Copyright 2022, Jose Barzola - Full stack developer.</span>
-          </div>
-  
+            <div class="copyright-container">
+                <span class="copyright">Copyright 2022, Jose Barzola - Full stack developer.</span>
+            </div>
+
         </footer>
-      </div>
+    </div>
 
-      <script src="script.js"></script>
+    <script src="script.js"></script>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-      </script>
+    </script>
 </body>
+
 </html>
