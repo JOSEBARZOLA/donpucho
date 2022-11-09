@@ -124,10 +124,36 @@ padding: 0 4px;
     pointer-events: none;
 }
 
+@media  screen and (min-width: 1024px) and (max-width: 1440px) {
+    .columna img {
+        width: 100%;
+        height: 100% auto;
+    }
 
+    .columna{
+        flex: 15%;
+        max-width: 30%;
+        }
+    .botones{
+        font-size: 40px;
+    }
+    .atras{
+        left: 40px;
+    }
+    .adelante{
+        right: 40px;
+    }
+    .slideshow img{
+        width: 90%;
+    }
+    }
 
 
 @media  screen and (max-width: 800px) {
+    .columna img {
+        width: 100%;
+        height: 100% auto;
+    }
 
     .columna{
     flex: 50%;
@@ -149,6 +175,10 @@ padding: 0 4px;
 
 
 @media screen and(max-width: 400px){
+    .columna img {
+        width: 100%;
+        height: 100% auto;
+    }
 .columna{
     flex: 100%;
     max-width: 100%;

@@ -117,6 +117,8 @@ img_slideshow.src = imagenes[imagen_seleccionada].img
 contador = imagen_seleccionada
 overlay.style.opacity = 1
 overlay.style.visibility = 'visible'
+
 })
 })
 })
+
