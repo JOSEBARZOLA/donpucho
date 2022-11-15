@@ -120,5 +120,13 @@ overlay.style.visibility = 'visible'
 
 })
 })
+document.querySelector('.btn_cerrar').addEventListener('click', () =>{
+overlay.style.opacity = 0
+overlay.style.visibility = "hidden"
+
+})
+
+
+
 })
 
